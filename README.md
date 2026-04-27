@@ -116,6 +116,13 @@ public class PlumbingController : ControllerBase
 
 ## 🔄 How It Works
 
+```mermaid
+flowchart LR
+    A[Client / Service] --> B[Identity Server]
+    B -->|JWT Token (aud claim)| C[Afrisys.JwtAuthKit]
+    C --> D[Protected API]
+```
+
 1. A client requests a token from the Identity Server
 2. The Identity Server issues a JWT containing an `aud` claim
 3. The API validates:
@@ -129,20 +136,36 @@ public class PlumbingController : ControllerBase
 
 ## 🔐 Authentication Flow
 
-```
+```mermaid
+sequenceDiagram
+    participant Client
+    participant IdentityServer
+    participant API
 
-<img width="1551" height="1458" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9df0b514-970e-49d2-b5ee-c17c838338ff" />
+    Client->>IdentityServer: Request Token
+    IdentityServer-->>Client: JWT (aud = plumbing-api)
 
+    Client->>API: Bearer Token Request
+    API->>API: Validate Token
+
+    alt Valid
+        API-->>Client: 200 OK
+    else Invalid
+        API-->>Client: 401 Unauthorized
+    end
 ```
 
 ---
 
 ## 🎯 Audience-Based Isolation
 
-```
+```mermaid
+flowchart TD
+    A[Identity Server]
 
-<img width="1359" height="654" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/6497f0ca-5f7b-4247-9638-9cbf5de4ac86" />
-
+    A -->|aud=plumbing-api| P[Plumbing API]
+    A -->|aud=ecommerce-api| E[Ecommerce API]
+    A -->|aud=accounts-api| AC[Accounts API]
 ```
 
 Each API only accepts tokens with its own audience.
@@ -187,7 +210,7 @@ Token does not contain `aud`
 Ensure your Identity Server sets:
 
 ```csharp
-principal.SetAudiences("Your Scope");
+principal.SetAudiences("your-scope here");
 ```
 
 ---
