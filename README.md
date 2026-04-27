@@ -57,7 +57,7 @@ dotnet add package Afrisys.JwtAuthentication.AspNetCore
 {
   "Auth": {
     "Authority": "http://your-identity-server.com",
-    "Audience": "Your Scope Here"
+    "Audience": "Your aud Here"
   }
 }
 ```
@@ -115,13 +115,6 @@ public class PlumbingController : ControllerBase
 ---
 
 ## 🔄 How It Works
-
-```mermaid
-flowchart LR
-    A[Client / Service] --> B[Identity Server]
-    B -->|JWT Token (aud claim)| C[Afrisys.JwtAuthKit]
-    C --> D[Protected API]
-```
 
 1. A client requests a token from the Identity Server
 2. The Identity Server issues a JWT containing an `aud` claim
