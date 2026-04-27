@@ -1,0 +1,7 @@
+.vs
+.tar
+
+*.tar
+*.zip
+bin/
+obj/
