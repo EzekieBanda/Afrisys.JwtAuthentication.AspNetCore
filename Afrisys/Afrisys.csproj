@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+
+		<!-- Package Identity -->
+		<PackageId>Afrisys.JwtAuthentication.AspNetCore</PackageId>
+		<Version>1.0.1</Version>
+
+		<Authors>EzekDev</Authors>
+		<Company>Afrisys</Company>
+
+		<Description>
+			Lightweight JWT authentication and authorization library for ASP.NET Core APIs, enforcing secure microservice communication using an Audience-based scope model. Simplifies API protection with plug-and-play configuration, eliminating complex policies while ensuring strict service-to-service isolation.
+		</Description>
+
+		<PackageReleaseNotes>
+			Fixed JWT validation issue caused by dependency conflicts with Microsoft.IdentityModel packages.
+		</PackageReleaseNotes>
+		<PackageTags>jwt;authentication;authorization;aspnetcore;webapi;security;oauth2;openidconnect;microservices;api-security;bearer-token</PackageTags>
+
+		<!-- Required for NuGet -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Optional but professional -->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>

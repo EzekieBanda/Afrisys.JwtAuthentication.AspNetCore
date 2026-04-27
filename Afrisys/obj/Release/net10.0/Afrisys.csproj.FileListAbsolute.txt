@@ -1,0 +1,12 @@
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\Afrisys.deps.json
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\Afrisys.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\Afrisys.pdb
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.csproj.AssemblyReference.cache
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.AssemblyInfoInputs.cache
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.AssemblyInfo.cs
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.csproj.CoreCompileInputs.cache
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.dll
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\refint\Afrisys.dll
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\Afrisys.pdb
+D:\DotNet\Afrisys\Afrisys\obj\Release\net10.0\ref\Afrisys.dll

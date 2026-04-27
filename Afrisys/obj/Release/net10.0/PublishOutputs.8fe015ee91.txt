@@ -1,0 +1,11 @@
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Afrisys.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Afrisys.deps.json
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Afrisys.pdb
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.Abstractions.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.Logging.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.Protocols.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\Microsoft.IdentityModel.Tokens.dll
+D:\DotNet\Afrisys\Afrisys\bin\Release\net10.0\publish\System.IdentityModel.Tokens.Jwt.dll
